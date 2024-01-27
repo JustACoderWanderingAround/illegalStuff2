@@ -95,6 +95,7 @@ GameObject:
   - component: {fileID: 6571997295180057556}
   - component: {fileID: 6571997295180057559}
   - component: {fileID: 6571997295180057558}
+  - component: {fileID: -3161297593354012670}
   m_Layer: 0
   m_Name: TV
   m_TagString: Untagged
@@ -190,3 +191,24 @@ MonoBehaviour:
   - spriteToUse: {fileID: -1120609630, guid: a0452de7eafd42441a71da74615eb014, type: 3}
     targetHealthPercentage: 0
     childToEnable: {fileID: 6571997294601269558}
+--- !u!50 &-3161297593354012670
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6571997295180057553}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4

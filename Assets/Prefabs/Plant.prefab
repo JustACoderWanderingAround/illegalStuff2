@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1389694750947175913}
   - component: {fileID: 1389694750947175914}
   - component: {fileID: 1389694750947175915}
+  - component: {fileID: 4774543692585228275}
   m_Layer: 0
   m_Name: Plant
   m_TagString: Untagged
@@ -105,3 +106,24 @@ MonoBehaviour:
   - spriteToUse: {fileID: -861003706, guid: 9e600768ac12f6941a8900fb035fe02e, type: 3}
     targetHealthPercentage: 0
     childToEnable: {fileID: 0}
+--- !u!50 &4774543692585228275
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1389694750947175916}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4

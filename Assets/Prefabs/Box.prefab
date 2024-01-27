@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1207716722932318675}
   - component: {fileID: 1207716722932318684}
   - component: {fileID: 1207716722932318685}
+  - component: {fileID: -591203380242323400}
   m_Layer: 0
   m_Name: Box
   m_TagString: Untagged
@@ -105,3 +106,24 @@ MonoBehaviour:
   - spriteToUse: {fileID: -1244618826, guid: 178982223cf7c2c4c81ba2f37cbb485c, type: 3}
     targetHealthPercentage: 0
     childToEnable: {fileID: 0}
+--- !u!50 &-591203380242323400
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1207716722932318686}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4

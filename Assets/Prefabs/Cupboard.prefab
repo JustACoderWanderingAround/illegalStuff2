@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1941172111819420640}
   - component: {fileID: 1941172111819420641}
   - component: {fileID: 1941172111819420642}
+  - component: {fileID: 6224954309332201367}
   m_Layer: 0
   m_Name: Cupboard
   m_TagString: Untagged
@@ -105,3 +106,24 @@ MonoBehaviour:
   - spriteToUse: {fileID: -914211295, guid: 9d142ed2f1d6c3b479adf22e7c4aacbe, type: 3}
     targetHealthPercentage: 0
     childToEnable: {fileID: 0}
+--- !u!50 &6224954309332201367
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1941172111819420643}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
