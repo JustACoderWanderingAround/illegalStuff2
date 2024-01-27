@@ -7,7 +7,7 @@ public struct DamageState
 {
     public Sprite spriteToUse;
     public float targetHealthPercentage;
-    public bool thresholdReached;
+    public GameObject childToEnable;
 }
 
 public class DamageableProp : MonoBehaviour
@@ -55,6 +55,9 @@ public class DamageableProp : MonoBehaviour
         {
             // take damage equal to the damager's weight divided by this prop's durability
             currentHealth -= prop.weight / durability;
+
+            // Debug version
+            //currentHealth--;
         }
 
         spriteRenderer.sprite = ChangeSprite();
@@ -68,6 +71,11 @@ public class DamageableProp : MonoBehaviour
         {
             if (healthPercent <= damageState.targetHealthPercentage)
             {
+                if (damageState.childToEnable && !damageState.childToEnable.activeInHierarchy) // If there is a child that the prop needs to enable, enable it
+                {
+                    damageState.childToEnable.SetActive(true);
+                }
+
                 return damageState.spriteToUse;
             }
         }
