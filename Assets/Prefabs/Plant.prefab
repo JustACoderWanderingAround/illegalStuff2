@@ -106,6 +106,8 @@ MonoBehaviour:
   - spriteToUse: {fileID: -861003706, guid: 9e600768ac12f6941a8900fb035fe02e, type: 3}
     targetHealthPercentage: 0
     childToEnable: {fileID: 0}
+  damageFX: {fileID: 0}
+  destroyedFX: {fileID: 0}
 --- !u!50 &4774543692585228275
 Rigidbody2D:
   serializedVersion: 4

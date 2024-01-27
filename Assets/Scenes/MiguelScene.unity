@@ -164,6 +164,8 @@ MonoBehaviour:
   - spriteToUse: {fileID: 21300000, guid: c0f8b20fc32f95344823e69baa39d1f0, type: 3}
     targetHealthPercentage: 0.75
     childToEnable: {fileID: 0}
+  damageFX: {fileID: 0}
+  destroyedFX: {fileID: 0}
 --- !u!212 &496519426
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -379,6 +381,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 676215134, guid: 0a9216b1af95d0744826d2876ae94786, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 884872549, guid: 0a9216b1af95d0744826d2876ae94786, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 627886711665239873, guid: 0a9216b1af95d0744826d2876ae94786, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1207716722932318675, guid: 0a9216b1af95d0744826d2876ae94786, type: 3}
       propertyPath: m_RootOrder
       value: 7

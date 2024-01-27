@@ -23,6 +23,9 @@ public class DamageableProp : MonoBehaviour
     public DamageState[] damageStates; 
 
     SpriteRenderer spriteRenderer;
+    [Tooltip("Particle shit")]
+    public ParticleSystem damageFX;
+    public ParticleSystem destroyedFX;
     private void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -50,6 +53,11 @@ public class DamageableProp : MonoBehaviour
         if (damager.tag == "Player") // If the player was the one causing the damage to this object, simply subtract from the health of the object
         {
             currentHealth--;
+            if (currentHealth <= 0 && (destroyedFX && damageFX != null))
+                destroyedFX.Play();
+            else
+                damageFX.Play();
+            
         }
         else if(TryGetComponent(out DamageableProp prop)) // If the prop is being damaged by another prop, 
         {
@@ -79,6 +87,7 @@ public class DamageableProp : MonoBehaviour
                 return damageState.spriteToUse;
             }
         }
+
 
         return spriteRenderer.sprite;
     }
