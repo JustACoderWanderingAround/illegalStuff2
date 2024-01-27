@@ -19,7 +19,9 @@ public class GameManager : MonoBehaviour
     public EndingType chosenEnding = EndingType.Undetermined; // Set the default value to undetermined because the ending
     [SerializeField] EndingRange[] ranges;
 
-    public float totalScore = 0;
+    public float totalScore = 0f;
+    [SerializeField] float timeLimit = 300f; // Tentatively, the time limit is 5 mins
+    float remainingTime;
     void Awake() 
     {
         if (Instance != null && Instance != this) // Make this a singleton
@@ -31,16 +33,23 @@ public class GameManager : MonoBehaviour
             Instance = this;
         }
     }
-    // Start is called before the first frame update
-    void Start()
+
+    private void Start()
     {
-        
+        remainingTime = timeLimit;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
+        if (remainingTime > 0)
+        {
+            remainingTime -= Time.deltaTime; // Decrease timer until it reaches below 0
+        }
+        else
+        {
+            chosenEnding = DetermineEnding(); // After reaching the end of the timer, use score to determine ending
+            LoadEnding();
+        }
     }
 
     public void AddScore(float amountToAdd)
