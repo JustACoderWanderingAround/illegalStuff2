@@ -579,76 +579,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bits_22
-      rect:
-        serializedVersion: 2
-        x: 1876
-        y: 622
-        width: 216
-        height: 318
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a6d530b89a650504282b065275bf2fc2
-      internalID: 1784991038
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bits_23
-      rect:
-        serializedVersion: 2
-        x: 370
-        y: 710
-        width: 343
-        height: 110
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 332d3fe70244a724ca959cc087884406
-      internalID: 543963459
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bits_24
-      rect:
-        serializedVersion: 2
-        x: 260
-        y: 256
-        width: 304
-        height: 352
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 83e4ca26c7df8cb46ab143f54c2ef00a
-      internalID: -1996376690
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Bits_25
       rect:
         serializedVersion: 2
-        x: 942
-        y: 389
-        width: 332
-        height: 184
+        x: 2140
+        y: 985
+        width: 88
+        height: 89
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -666,10 +603,10 @@ TextureImporter:
       name: Bits_26
       rect:
         serializedVersion: 2
-        x: 1480
-        y: 290
-        width: 107
-        height: 112
+        x: 2272
+        y: 974
+        width: 101
+        height: 90
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -687,10 +624,10 @@ TextureImporter:
       name: Bits_27
       rect:
         serializedVersion: 2
-        x: 1690
-        y: 102
-        width: 139
-        height: 349
+        x: 2421
+        y: 987
+        width: 102
+        height: 57
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -708,10 +645,10 @@ TextureImporter:
       name: Bits_28
       rect:
         serializedVersion: 2
-        x: 18
-        y: 53
-        width: 204
-        height: 310
+        x: 370
+        y: 710
+        width: 343
+        height: 110
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -729,10 +666,10 @@ TextureImporter:
       name: Bits_29
       rect:
         serializedVersion: 2
-        x: 263
-        y: 53
-        width: 329
-        height: 156
+        x: 1876
+        y: 622
+        width: 216
+        height: 318
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -750,10 +687,10 @@ TextureImporter:
       name: Bits_30
       rect:
         serializedVersion: 2
-        x: 608
-        y: 74
-        width: 261
-        height: 298
+        x: 260
+        y: 256
+        width: 304
+        height: 352
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -771,10 +708,10 @@ TextureImporter:
       name: Bits_31
       rect:
         serializedVersion: 2
-        x: 937
-        y: 48
-        width: 350
-        height: 262
+        x: 942
+        y: 389
+        width: 332
+        height: 184
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -792,6 +729,132 @@ TextureImporter:
       name: Bits_32
       rect:
         serializedVersion: 2
+        x: 1480
+        y: 290
+        width: 107
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef64b8853fad42548a15c2b9e0b629cd
+      internalID: -944129173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bits_33
+      rect:
+        serializedVersion: 2
+        x: 1690
+        y: 102
+        width: 139
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f40cb74c91ae764898755532317d7d2
+      internalID: -1086137202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bits_34
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 53
+        width: 204
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d9ef5c33ededf843bae91ac06d821f1
+      internalID: -108128996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bits_35
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 53
+        width: 329
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ecb7974c0060a349be9d3d49fafc300
+      internalID: -829184286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bits_36
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 74
+        width: 261
+        height: 298
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6c53335472f9294ea9b798dbc9dc0a0
+      internalID: 2122420682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bits_37
+      rect:
+        serializedVersion: 2
+        x: 937
+        y: 48
+        width: 350
+        height: 262
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ef3d85a8a0886c479c8ac3da0b1b470
+      internalID: 1265336705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bits_38
+      rect:
+        serializedVersion: 2
         x: 1493
         y: 65
         width: 105
@@ -803,8 +866,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ef64b8853fad42548a15c2b9e0b629cd
-      internalID: -944129173
+      spriteID: 8d16ce51e9741e84281e44b00c999a72
+      internalID: 952107132
       vertices: []
       indices: 
       edges: []
@@ -847,6 +910,13 @@ TextureImporter:
       Bits_30: 542719727
       Bits_31: 1885021148
       Bits_32: -944129173
+      Bits_33: -1086137202
+      Bits_34: -108128996
+      Bits_35: -829184286
+      Bits_36: 2122420682
+      Bits_37: 1265336705
+      Bits_38: 952107132
+      Bits_39: -1409102680
       Bits_4: 1833491453
       Bits_5: -2115109989
       Bits_6: -177542541
