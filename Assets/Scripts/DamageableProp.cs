@@ -46,24 +46,23 @@ public class DamageableProp : MonoBehaviour
     public void DamageProp(GameObject damager) // This will be called by the player whenever it attacks and the prop is in range.
     {
         if (currentHealth <= 0) return; // Dont run the code if we damage a destroyed object
+
         if (damager.tag == "Player") // If the player was the one causing the damage to this object, simply subtract from the health of the object
         {
             currentHealth--;
         }
-
-        currentHealth--;
+        else if(TryGetComponent(out DamageableProp prop)) // If the prop is being damaged by another prop, 
+        {
+            // take damage equal to the damager's weight divided by this prop's durability
+            currentHealth -= prop.weight / durability;
+        }
 
         spriteRenderer.sprite = ChangeSprite();
-        Debug.Log(ChangeSprite());
-
-        
-        
     }
 
     Sprite ChangeSprite()
     {
         float healthPercent = currentHealth / maxHealth;
-        Sprite spriteToUse;
 
         foreach (DamageState damageState in damageStates)
         {

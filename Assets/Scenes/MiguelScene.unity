@@ -158,10 +158,12 @@ MonoBehaviour:
   durability: 1
   maxHealth: 8
   damageStates:
-  - spriteToUse: {fileID: 21300000, guid: c0f8b20fc32f95344823e69baa39d1f0, type: 3}
-    targetHealthPercentage: 0.75
   - spriteToUse: {fileID: 0}
     targetHealthPercentage: 0.5
+    thresholdReached: 0
+  - spriteToUse: {fileID: 21300000, guid: c0f8b20fc32f95344823e69baa39d1f0, type: 3}
+    targetHealthPercentage: 0.75
+    thresholdReached: 0
 --- !u!212 &496519426
 SpriteRenderer:
   m_ObjectHideFlags: 0
