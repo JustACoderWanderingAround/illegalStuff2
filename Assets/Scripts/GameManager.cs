@@ -19,7 +19,7 @@ public class GameManager : MonoBehaviour
     public EndingType chosenEnding = EndingType.Undetermined; // Set the default value to undetermined because the ending
     [SerializeField] EndingRange[] ranges;
 
-    public float totalScore;
+    public float totalScore = 0;
     void Awake() 
     {
         if (Instance != null && Instance != this) // Make this a singleton
