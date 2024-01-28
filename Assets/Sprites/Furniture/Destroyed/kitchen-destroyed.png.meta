@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5d8352c053da3fc47a802c04212d4b4c
+guid: 742d01fc17159864ebd2c78937560639
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -42,12 +42,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 200
+  spritePixelsToUnits: 300
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -115,7 +115,91 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: kitchen-destroyed_0
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 1410
+        width: 300
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51a640b7929117940be15d61efa3cee8
+      internalID: -163816650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kitchen-destroyed_1
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 1643
+        width: 309
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4d6e1792fca58449a953fd5712adabc
+      internalID: 1681929070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kitchen-destroyed_2
+      rect:
+        serializedVersion: 2
+        x: 2186
+        y: 1718
+        width: 339
+        height: 314
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 281ee12bc8a76b740b1f99b25f36cb4b
+      internalID: 316584739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kitchen-destroyed_7
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 1058
+        width: 580
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4ccad90b5447ad45b9f405590d4bdcc
+      internalID: 262801760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -126,7 +210,15 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      kitchen-destroyed_0: -163816650
+      kitchen-destroyed_1: 1681929070
+      kitchen-destroyed_2: 316584739
+      kitchen-destroyed_3: -430453758
+      kitchen-destroyed_4: -75692436
+      kitchen-destroyed_5: 698342381
+      kitchen-destroyed_6: 1188616725
+      kitchen-destroyed_7: 262801760
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

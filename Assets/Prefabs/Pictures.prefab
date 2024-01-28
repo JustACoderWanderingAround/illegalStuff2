@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 4940328900941721139}
   - component: {fileID: 4940328900941721142}
   - component: {fileID: 4940328900941721141}
+  - component: {fileID: 254829757970023366}
   m_Layer: 0
   m_Name: Pictures
-  m_TagString: Untagged
+  m_TagString: Furniture
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -106,6 +107,8 @@ MonoBehaviour:
   - spriteToUse: {fileID: 237568640, guid: eef6e4f2950ecc441a853c1aa4aa17f4, type: 3}
     targetHealthPercentage: 0
     childToEnable: {fileID: 0}
+  damageFX: {fileID: 0}
+  destroyedFX: {fileID: 0}
 --- !u!50 &4940328900941721141
 Rigidbody2D:
   serializedVersion: 4
@@ -127,3 +130,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!58 &254829757970023366
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4940328900941721138}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 1
