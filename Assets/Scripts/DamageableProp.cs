@@ -53,16 +53,20 @@ public class DamageableProp : MonoBehaviour
         if (damager.tag == "Player") // If the player was the one causing the damage to this object, simply subtract from the health of the object
         {
             currentHealth--;
+            GameManager.Instance.AddScore((1 / maxHealth) * score); // Add to the score based on the percentage of damage done
+            
             if (currentHealth <= 0 && (destroyedFX && damageFX != null))
                 destroyedFX.Play();
             else
                 damageFX.Play();
-            
         }
         else if(TryGetComponent(out DamageableProp prop)) // If the prop is being damaged by another prop, 
         {
-            // take damage equal to the damager's weight divided by this prop's durability
-            currentHealth -= prop.weight / durability;
+            // Take damage equal to the damager's weight divided by this prop's durability.
+            // Clamp it between 0 and currentHealth so we do not go below 0 and add more score than intended
+            float damageTaken = Mathf.Clamp(prop.weight / durability, 0, currentHealth);
+            currentHealth -= damageTaken;
+            GameManager.Instance.AddScore(damageTaken / maxHealth * score);
 
             // Debug version
             //currentHealth--;
