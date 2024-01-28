@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     SpriteRenderer sr;
     [SerializeField] float movementSpeed = 5.0f;
     bool slashing;
+    bool isMoving;
     void Awake()
     {
         animator = GetComponent<Animator>();
@@ -24,42 +25,53 @@ public class PlayerController : MonoBehaviour
         dir.x = Input.GetAxisRaw("Horizontal");
         dir.y = Input.GetAxisRaw("Vertical");
         dir.z = 0;
-        if (dir.x > 0)
-        {
+        if (dir.x > 0 && isMoving)
             sr.flipX = true;
 
+        else if (dir.x < 0 && isMoving)
+            sr.flipX = false;
+        // move player based on direction
+        transform.position += dir * Time.deltaTime * movementSpeed;
+        if (dir.x != 0 || dir.y != 0 || animator.GetCurrentAnimatorStateInfo(0).IsName("Slash"))
+        {
+            isMoving = true;
+            animator.speed = 1f;
         }
         else
         {
-            sr.flipX = false;
-
+            isMoving = false;
+            animator.speed = 0f;
         }
-        // move player based on direction
-        transform.position += dir * Time.deltaTime * movementSpeed;
-
-        animator.SetInteger("dirX", (int)dir.x);
-        animator.SetInteger("dirY", (int)dir.y);
+        if (isMoving == true)
+        {
+            animator.SetInteger("dirX", (int)dir.x);
+            animator.SetInteger("dirY", (int)dir.y);
+        }
         // change animation accordingly
         // i hate unity animator so i did it in code
         //UpdateAnimation();
 
         //damage prosp when pressing the appropriate key
-        if (Input.GetKeyDown(KeyCode.C) && !slashing)
+        if (Input.GetKeyDown(KeyCode.C))// && /!slashing)
             DamageProps();
+        /*
         if (animator.GetCurrentAnimatorStateInfo(0).IsName("Slash"))
         {
-            if (animator.GetCurrentAnimatorStateInfo(0).normalizedTime > 1)
+            if (animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1)
             {
                 slashing = false;
             }
         }
+        */
     }
     void DamageProps()
     {
+        Debug.Log("we slashing");
         // ensure other animiations dont replay
         slashing = true;
         // set animation appropriately
-        animator.CrossFade("Slash", 0.1f);
+        //animator.CrossFade("Slash", 0.1f);
+        animator.SetTrigger("Slash");
         Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, 2.0f);
         foreach (Collider2D collider in colliders)
         {
