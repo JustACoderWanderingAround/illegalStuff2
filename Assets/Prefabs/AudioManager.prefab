@@ -49,7 +49,25 @@ MonoBehaviour:
   backgroundMusic: {fileID: 8809998896236065120}
   soundEffect: {fileID: -4696102916939339523}
   backgroundMusicClip: {fileID: 8300000, guid: ed4c437de84156c44b7a290189d39b2c, type: 3}
-  soundEffectClips: []
+  soundEffectClips:
+  - sfx:
+    - {fileID: 8300000, guid: b2cd824c0e3b8344ca2b808a41a2de62, type: 3}
+    - {fileID: 8300000, guid: 37e8f941959fa2042a3edd28c00dbb14, type: 3}
+    - {fileID: 8300000, guid: 9cf0f53bc9b576b4b9d3ac302328357f, type: 3}
+    - {fileID: 8300000, guid: c203067b78b9361488db91632c42f1e1, type: 3}
+    - {fileID: 8300000, guid: d4b5bea1693257844b14aba25cd49873, type: 3}
+  - sfx:
+    - {fileID: 8300000, guid: 99ebaca84190204408c23db810bc741d, type: 3}
+    - {fileID: 8300000, guid: 5dd1805259f163b4ab680fa086db974d, type: 3}
+  - sfx:
+    - {fileID: 8300000, guid: e6cafd5bf781c474493fdffc9db4b960, type: 3}
+    - {fileID: 8300000, guid: e22118b52c2a9804a80841cd35aca0ff, type: 3}
+    - {fileID: 8300000, guid: 22a73c24b15c9854d98a39e694238be1, type: 3}
+    - {fileID: 8300000, guid: 09bca20927277af4b9e94a8d03c1b098, type: 3}
+    - {fileID: 8300000, guid: fe6b4ed110b62ed42af7fc290e14c9ad, type: 3}
+  - sfx:
+    - {fileID: 8300000, guid: 6965f5408445833408af565426a7dfb4, type: 3}
+  - sfx: []
 --- !u!82 &8809998896236065120
 AudioSource:
   m_ObjectHideFlags: 0

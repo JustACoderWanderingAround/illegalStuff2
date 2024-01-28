@@ -26,6 +26,9 @@ public class DamageableProp : MonoBehaviour
     [Tooltip("Particle shit")]
     public ParticleSystem damageFX;
     public ParticleSystem destroyedFX;
+    [Header("1, 2 - Wood.  3, 4 - Metal")]
+    public int damageSound;
+    public int destroySound;
     private void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -54,10 +57,15 @@ public class DamageableProp : MonoBehaviour
         {
             currentHealth--;
             if (currentHealth <= 0 && (destroyedFX && damageFX != null))
+            {
                 destroyedFX.Play();
+                AudioManager.Instance.PlaySoundEffect(destroySound);
+            }
             else
+            {
                 damageFX.Play();
-            
+                AudioManager.Instance.PlaySoundEffect(damageSound);
+            }
         }
         else if(TryGetComponent(out DamageableProp prop)) // If the prop is being damaged by another prop, 
         {
