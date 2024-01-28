@@ -98,7 +98,7 @@ GameObject:
   - component: {fileID: -3161297593354012670}
   m_Layer: 0
   m_Name: TV
-  m_TagString: Untagged
+  m_TagString: Furniture
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -191,6 +191,8 @@ MonoBehaviour:
   - spriteToUse: {fileID: -1120609630, guid: a0452de7eafd42441a71da74615eb014, type: 3}
     targetHealthPercentage: 0
     childToEnable: {fileID: 6571997294601269558}
+  damageFX: {fileID: 0}
+  destroyedFX: {fileID: 0}
 --- !u!50 &-3161297593354012670
 Rigidbody2D:
   serializedVersion: 4
