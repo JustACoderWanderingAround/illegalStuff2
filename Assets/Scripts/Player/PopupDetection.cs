@@ -31,7 +31,6 @@ public class PopupDetection : MonoBehaviour
         // Check if the dialogue menu is open and if there is more text to display
         if (dialogueMenu.activeInHierarchy && dialogueIndex <= currentPopup.popupLines.Length - 1)
         {
-            //DisplayText();
             if (Input.GetKeyDown(KeyCode.Mouse0))
             {
                 dialogueIndex++;
