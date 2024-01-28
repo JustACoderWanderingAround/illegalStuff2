@@ -31,11 +31,18 @@ public class PopupDetection : MonoBehaviour
         // Check if the dialogue menu is open and if there is more text to display
         if (dialogueMenu.activeInHierarchy && dialogueIndex <= currentPopup.popupLines.Length - 1)
         {
-            DisplayText();
+            //DisplayText();
             if (Input.GetKeyDown(KeyCode.Mouse0))
             {
                 dialogueIndex++;
-                textObject.text = currentPopup.popupLines[dialogueIndex];
+                if (dialogueIndex > currentPopup.popupLines.Length - 1)
+                {
+                    CloseMenu();
+                    return;
+                }
+                textObject.SetText(currentPopup.popupLines[dialogueIndex]);
+                textObject.SetVerticesDirty();
+                textObject.SetLayoutDirty();
             }
         }
     }
@@ -106,5 +113,11 @@ public class PopupDetection : MonoBehaviour
         // Set the text to display the first string in the PopupSO
         //dialogueIndex = 0;
         textObject.text = currentPopup.popupLines[0];
+    }
+
+    public void CloseMenu()
+    {
+        dialogueIndex = 0;
+        dialogueMenu.SetActive(false);
     }
 }
