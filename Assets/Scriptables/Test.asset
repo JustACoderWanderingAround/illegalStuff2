@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Test
   m_EditorClassIdentifier: 
   popupLines:
-  - Test Test
-  - Fuck
+  - This is a box.
+  - We used it for testing.

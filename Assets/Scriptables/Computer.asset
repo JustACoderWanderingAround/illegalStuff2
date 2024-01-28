@@ -12,4 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f6c1e49917b87744a039bb3fa343ed7, type: 3}
   m_Name: Computer
   m_EditorClassIdentifier: 
-  popupLines: []
+  popupLines:
+  - The owner's computer You shouldn't look at these tabs...
+  - ...You see a woman of anatomically inaccurate proportions.

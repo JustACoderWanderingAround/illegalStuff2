@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8f6c1e49917b87744a039bb3fa343ed7, type: 3}
-  m_Name: Chair
+  m_Name: TV
   m_EditorClassIdentifier: 
   popupLines:
-  - The owner's chair, he sits on it every day.
-  - Those white patches on it smell quite funky.
+  - 'This is your owner''s newly bought 24 inch tv. '
+  - He killed JFK for this.
