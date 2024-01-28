@@ -26,7 +26,7 @@ public class DamageableProp : MonoBehaviour
     [Tooltip("Particle shit")]
     public ParticleSystem damageFX;
     public ParticleSystem destroyedFX;
-    [Header("1, 2 - Wood.  3, 4 - Metal")]
+    [Header("0, 1 - Wood.  2, 3 - Metal  4, 5 - ClayGlass")]
     public int damageSound;
     public int destroySound;
     private void Awake()
