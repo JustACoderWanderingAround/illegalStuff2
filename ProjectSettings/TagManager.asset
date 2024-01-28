@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Furniture
   layers:
   - Default
   - TransparentFX
@@ -46,4 +47,7 @@ TagManager:
     locked: 0
   - name: Props
     uniqueID: 629262983
+    locked: 0
+  - name: FX
+    uniqueID: 2607032045
     locked: 0
