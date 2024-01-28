@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement; 
 
 public class EndingAnimation : MonoBehaviour
 {
@@ -28,5 +29,7 @@ public class EndingAnimation : MonoBehaviour
         sr.sprite = sprites[3];
         yield return new WaitForSeconds(2f);
         sr.sprite = sprites[4];
+        yield return new WaitForSeconds(2f);
+        SceneManager.LoadScene("MenuScene");
     }
 }
