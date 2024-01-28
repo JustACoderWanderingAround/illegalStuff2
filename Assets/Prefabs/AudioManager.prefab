@@ -67,7 +67,20 @@ MonoBehaviour:
     - {fileID: 8300000, guid: fe6b4ed110b62ed42af7fc290e14c9ad, type: 3}
   - sfx:
     - {fileID: 8300000, guid: 6965f5408445833408af565426a7dfb4, type: 3}
-  - sfx: []
+  - sfx:
+    - {fileID: 8300000, guid: d7d6c5dcf3c7a974e9a2d1358c556027, type: 3}
+    - {fileID: 8300000, guid: 50c4063f86e41844e87d319003404612, type: 3}
+    - {fileID: 8300000, guid: a938e8c650fde084e805903d50c64e68, type: 3}
+    - {fileID: 8300000, guid: 7952101fa1aadf249a007bdff4173b18, type: 3}
+    - {fileID: 8300000, guid: 6616961d134bb0947a8581b01e4fc618, type: 3}
+  - sfx:
+    - {fileID: 8300000, guid: f8ae1f250567fd240948b54386f2a00b, type: 3}
+  - sfx:
+    - {fileID: 8300000, guid: dfd77b128bc3d5544b1c3f9aeccf91aa, type: 3}
+    - {fileID: 8300000, guid: 6eaa0ed74b288ee4b884b02309b354bc, type: 3}
+    - {fileID: 8300000, guid: 0c573dc4c5a50994cb6328d5b54fb313, type: 3}
+  - sfx:
+    - {fileID: 8300000, guid: 0d5632fb04091d3428b4c52a02130572, type: 3}
 --- !u!82 &8809998896236065120
 AudioSource:
   m_ObjectHideFlags: 0
@@ -80,7 +93,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.25
   m_Pitch: 1
   Loop: 0
   Mute: 0

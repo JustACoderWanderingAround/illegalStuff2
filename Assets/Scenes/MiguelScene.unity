@@ -553,12 +553,29 @@ PrefabInstance:
       propertyPath: m_Name
       value: AudioManager
       objectReference: {fileID: 0}
-    - target: {fileID: 8809998896236065120, guid: 1348f0069d4b1c44a931d6c9fa2c4ad0, type: 3}
-      propertyPath: m_Volume
-      value: 0.25
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1348f0069d4b1c44a931d6c9fa2c4ad0, type: 3}
+--- !u!1 &629746376 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7022932163318776486, guid: 9bf199eb4c0174844bce6552b433a0b5, type: 3}
+  m_PrefabInstance: {fileID: 7022932161664235131}
+  m_PrefabAsset: {fileID: 0}
+--- !u!58 &629746377
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 629746376}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 3
 --- !u!1 &696362481
 GameObject:
   m_ObjectHideFlags: 0
@@ -1030,11 +1047,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1389694750947175913, guid: 58aab78aa6e93974cbba36632aac9c1d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.21
+      value: 6.04
       objectReference: {fileID: 0}
     - target: {fileID: 1389694750947175913, guid: 58aab78aa6e93974cbba36632aac9c1d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.22
+      value: 2.75
       objectReference: {fileID: 0}
     - target: {fileID: 1389694750947175913, guid: 58aab78aa6e93974cbba36632aac9c1d, type: 3}
       propertyPath: m_LocalPosition.z
