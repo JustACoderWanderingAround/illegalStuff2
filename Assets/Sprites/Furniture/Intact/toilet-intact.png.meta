@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5d8352c053da3fc47a802c04212d4b4c
+guid: b0d62c10e15e2ad48afc87a28e7b2a0c
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -42,12 +42,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 200
+  spritePixelsToUnits: 300
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -115,7 +115,112 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: toilet-intact_0
+      rect:
+        serializedVersion: 2
+        x: 923
+        y: 1625
+        width: 362
+        height: 649
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dea9e59234df794789a0a7a0c7b7b02
+      internalID: 813560276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toilet-intact_1
+      rect:
+        serializedVersion: 2
+        x: 1693
+        y: 2201
+        width: 395
+        height: 494
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1de996e0f51dea4493efc32904f62f1
+      internalID: 83141374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toilet-intact_2
+      rect:
+        serializedVersion: 2
+        x: 1671
+        y: 1712
+        width: 442
+        height: 427
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b819fd0c836d5334881fcfdea7e4f8d1
+      internalID: 830256541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toilet-intact_3
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 959
+        width: 152
+        height: 559
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d7f7c96a2f4ac549a7ec1f80ddaca27
+      internalID: 1548863557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toilet-intact_4
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 1094
+        width: 82
+        height: 314
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55b0db7163dcd804c8e98026cc79c03d
+      internalID: 496238855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -126,7 +231,15 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      toilet-intact_0: 813560276
+      toilet-intact_1: 83141374
+      toilet-intact_2: 830256541
+      toilet-intact_3: 1548863557
+      toilet-intact_4: 496238855
+      toilet-intact_5: -1662621655
+      toilet-intact_6: -616458568
+      toilet-intact_7: 1470586494
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

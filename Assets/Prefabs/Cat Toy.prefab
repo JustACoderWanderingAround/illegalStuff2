@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 2734535327141055956}
   - component: {fileID: 2734535327141055955}
   - component: {fileID: 2734535327141055954}
+  - component: {fileID: 1206349900002778640}
   m_Layer: 0
   m_Name: Cat Toy
-  m_TagString: Untagged
+  m_TagString: Furniture
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -106,6 +107,8 @@ MonoBehaviour:
   - spriteToUse: {fileID: 1655681848, guid: 96c6c28de7995e74899c13967e675330, type: 3}
     targetHealthPercentage: 0
     childToEnable: {fileID: 0}
+  damageFX: {fileID: 0}
+  destroyedFX: {fileID: 0}
 --- !u!50 &2734535327141055954
 Rigidbody2D:
   serializedVersion: 4
@@ -127,3 +130,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!58 &1206349900002778640
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2734535327141055959}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 1.5
