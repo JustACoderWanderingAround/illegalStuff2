@@ -14835,6 +14835,8 @@ MonoBehaviour:
     childToEnable: {fileID: 0}
   damageFX: {fileID: 8372682756247325182}
   destroyedFX: {fileID: 8756208102465680992}
+  damageSound: 6
+  destroySound: 7
 --- !u!50 &5970689567293857714
 Rigidbody2D:
   serializedVersion: 4
