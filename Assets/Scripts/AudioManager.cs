@@ -2,13 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
+public struct SFX
+{
+    public AudioClip[] sfx;
+}
+
 public class AudioManager : MonoBehaviour
 {
     public AudioSource backgroundMusic;
     public AudioSource soundEffect;
 
     public AudioClip backgroundMusicClip;
-    public AudioClip[] soundEffectClips;
+    
+    public SFX[] soundEffectClips;
     //AudioManager.Instance.PlaySoundEffect(0);
 
     private static AudioManager instance;
@@ -44,7 +51,8 @@ public class AudioManager : MonoBehaviour
     {
         if (index >= 0 && index < soundEffectClips.Length)
         {
-            soundEffect.PlayOneShot(soundEffectClips[index]);
+            int i = soundEffectClips[index].sfx.Length;
+            soundEffect.PlayOneShot(soundEffectClips[index].sfx[Random.Range(0, i)]);
             //soundEffect.clip = soundEffectClips[index];
             //soundEffect.PlayOneShot();
         }

@@ -26,6 +26,9 @@ public class DamageableProp : MonoBehaviour
     [Tooltip("Particle shit")]
     public ParticleSystem damageFX;
     public ParticleSystem destroyedFX;
+    [Header("0, 1 - Wood.  2, 3 - Metal  4, 5 - ClayGlass")]
+    public int damageSound;
+    public int destroySound;
     private void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -56,9 +59,15 @@ public class DamageableProp : MonoBehaviour
             GameManager.Instance.AddScore((1 / maxHealth) * score); // Add to the score based on the percentage of damage done
             
             if (currentHealth <= 0 && (destroyedFX && damageFX != null))
+            {
                 destroyedFX.Play();
+                AudioManager.Instance.PlaySoundEffect(destroySound);
+            }
             else
+            {
                 damageFX.Play();
+                AudioManager.Instance.PlaySoundEffect(damageSound);
+            }
         }
         else if(TryGetComponent(out DamageableProp prop)) // If the prop is being damaged by another prop, 
         {

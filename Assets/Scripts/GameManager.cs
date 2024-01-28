@@ -22,6 +22,8 @@ public class GameManager : MonoBehaviour
     public float totalScore = 0f;
     [SerializeField] float timeLimit = 300f; // Tentatively, the time limit is 5 mins
     float remainingTime;
+
+    public GameObject endingObject;
     void Awake() 
     {
         if (Instance != null && Instance != this) // Make this a singleton
@@ -47,7 +49,7 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            chosenEnding = DetermineEnding(); // After reaching the end of the timer, use score to determine ending
+            //chosenEnding = DetermineEnding(); // After reaching the end of the timer, use score to determine ending
             LoadEnding();
         }
     }
@@ -72,6 +74,8 @@ public class GameManager : MonoBehaviour
 
     void LoadEnding()
     {
+        endingObject.SetActive(true);
+        /*
         switch (chosenEnding)
         {
             case EndingType.Undetermined:
@@ -83,6 +87,7 @@ public class GameManager : MonoBehaviour
             case EndingType.Ending3:
                 break;
         }
+        */
     }
 }
 
