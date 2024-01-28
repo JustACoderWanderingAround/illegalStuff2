@@ -14739,7 +14739,7 @@ GameObject:
   - component: {fileID: 8495002382393805145}
   m_Layer: 0
   m_Name: Sideways Table
-  m_TagString: Untagged
+  m_TagString: Furniture
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
